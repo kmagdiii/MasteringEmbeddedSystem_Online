@@ -13,6 +13,6 @@
 
 int main(void) {
 	//Creating hello project to get started with the main branch
-	printf("Hello");
+	printf("Hello  ");
 	return EXIT_SUCCESS;
 }
