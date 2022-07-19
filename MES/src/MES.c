@@ -86,4 +86,33 @@ int main(void) {
 	result = ++a+x;
 	printf("a=%.3f\tx=%d\t\t(++a+x)=%.3f (Prefix)\n",a,x,result);
 
+		//conditions 
+	//false condtion is zero only +ve and -ve are true 
+	//examples
+	if (-5)         //true
+	    printf("-5 is true condition\n");
+	if(0)           //false
+	    printf("Wont print as zero is false conditon\n");
+	    
+	//more examples for condtions 
+	x=5;
+	if (x == 5)
+	    printf("condition equal: x == 5--> %d\n",x == 5);
+	x=-5;
+	if (x < 0)
+	    printf("condition less than : x < 0--> %d\n",x < 0);
+	x=11;
+	a =22;
+	//complex conditions
+	if (x > 5 && a > 5)
+	    printf("condition greater than: x  > 5 && a > 5--> %d\n",x > 5 && a > 5);
+	x=-5;
+	a= 22;
+	if (x <= -5 && a > 11 )
+	    printf("condition less than and greater than : x <= -5 && a > 11--> %d\n",x <= -5 && a > 11);
+		x=-5;
+	a= 22;
+	if (x <= -5 && a++ > 11 )
+	    printf("condition less than and greater than : x <= -5 && a > 11--> %d\n",x <= -5 && a > 11);
+
 }
