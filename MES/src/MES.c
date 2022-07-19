@@ -32,4 +32,23 @@ int main(void) {
 	x = (int)a ;
 	printf("x= %d\t a= %.4f\n",x,a); // x= 13	 a= 13.1515
 
+		//bit wise operations 
+	//setting a specific bit
+	c |= (1<<n); //setting the (n+1)th bit
+	printf("c = 0X%x\n",c);
+	
+	//clearing a specific bit 
+	c=0xff;
+	n=3;
+	c &= ~(1<<n);  //clearing the (n+1)th bit 
+	printf("c = 0X%x\n",c);
+	
+	//Toggoling a specific bit
+	c=0xff;
+	n=3;
+	c ^= (1<<n);
+	printf("c=0X%x\t",c);
+	c ^= (1<<n);
+	printf("c=0X%x\n",c);
+
 }
