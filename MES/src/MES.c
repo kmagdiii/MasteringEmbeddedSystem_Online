@@ -15,5 +15,21 @@ int main(void) {
 	//Creating hello project to get started with the main branch
 	printf("Hello  ");
 	return EXIT_SUCCESS;
-	//Creating a new branch Cbasics to push it 
+	//Examples For implicit and Explicet Conversion
+	//imlicit 
+	int x = 0;
+	float a = 0;	
+	x = 33/55;
+	a = 33/55;
+	printf("x= %d\t a= %.4f\n",x,a); // x= 0	 a= 0.0000
+	
+	x = 33.0/55;
+	a = 33.0/55;
+	printf("x= %d\t a= %.4f\n",x,a); // x= 0	 a= 0.6000
+	
+	//explicit
+	a = 13.1515;
+	x = (int)a ;
+	printf("x= %d\t a= %.4f\n",x,a); // x= 13	 a= 13.1515
+
 }
