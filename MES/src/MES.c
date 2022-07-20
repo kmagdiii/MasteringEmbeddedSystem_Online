@@ -199,8 +199,50 @@ int main(void) {
 		    printf("Hello %d\n",i);
 		}
 
-		return EXIT_SUCCESS;
+		    //example for goto
+    c='s';
+    if(c == 's')
+    goto skipp;
+    printf("This is a skipped command if c = s\n");
+    skipp:
+    printf("This is printed after the skipped range\n");
+    
+    //example for while & break & continue
+    //while loop
+    x=18;
+    printf("while loop example\n");
+    while (x <= 20){
+        printf("x = %d\n",x++);
+    }
+    //break forces out of the loop if the condition true
+    x=18;
+    printf("Break from while loop example\n");
+    while (x <= 20){
+        if(x == 20)
+        break;
+        printf("x = %d\n",x++);
+    }
+    //do while loop example 
+    //excutes the scope at leaste one  
+    x=0;
+    do{
+        printf("Do while loop example \n");
+        break;
+    }while(1);
+    //continue keyword example
+    x=0;
+    while (x<5){
+        x++;
+        if(x==5)
+            continue;
+        printf("%d - this will print 1 -> 4 only\n",x);
+    }
 
-		//examples for for loop
 
+
+
+
+
+
+	return EXIT_SUCCESS;
 }
