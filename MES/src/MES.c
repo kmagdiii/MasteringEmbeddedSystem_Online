@@ -115,4 +115,29 @@ int main(void) {
 	if (x <= -5 && a++ > 11 )
 	    printf("condition less than and greater than : x <= -5 && a > 11--> %d\n",x <= -5 && a > 11);
 
+
+
+	//some examples for scanf
+	//scan one value
+	/*
+	printf("Please enter integer value :\n");
+	scanf("%d",&x);
+	printf("The value you enter is :%d",x);
+    */
+    //scan more than one value with white spaces between them
+	/*
+    printf("Please enter an integer, a real value and a character :\n");
+    scanf("%d %f %c",&x,&a,&c);
+	printf("Integer:%d\tFloat:%.4f\tCharacter:%c\n",x,a,c);
+	*/
+	// one line condition
+    x=20;
+	x>15? printf("x>15\n") : printf("x<15\n");
+	//useless condition
+	x=1;
+	if ( 1 ||++x == 1) // one ored with any value is 1 so the condition is useless
+	{
+	    printf("this condition alwayes true and useless\n");
+	    printf("The value of x: %d",x);
+	}
 }
