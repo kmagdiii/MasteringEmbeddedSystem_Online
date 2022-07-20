@@ -14,7 +14,7 @@
 int main(void) {
 	//Creating hello project to get started with the main branch
 	printf("Hello  ");
-	return EXIT_SUCCESS;
+
 	//Examples For implicit and Explicet Conversion
 	//imlicit 
 	int x = 0;
@@ -130,14 +130,56 @@ int main(void) {
     scanf("%d %f %c",&x,&a,&c);
 	printf("Integer:%d\tFloat:%.4f\tCharacter:%c\n",x,a,c);
 	*/
-	// one line condition
+	// inline condition
     x=20;
 	x>15? printf("x>15\n") : printf("x<15\n");
 	//useless condition
 	x=1;
-	if ( 1 ||++x == 1) // one ored with any value is 1 so the condition is useless
+	if ( 1 ||++x == 1) // one or-ed with any value is 1 so the condition is useless
 	{
 	    printf("this condition alwayes true and useless\n");
 	    printf("The value of x: %d",x);
 	}
+    //switch case examples
+    //switch case is usually faster then if else as it uses jump table 
+    x=2;
+    switch(x)
+    {
+        case 1:     //case condition must be constant
+        {
+            printf("This is case 1\n");
+        }
+        break;
+        case 2:
+        {
+            printf("This is case 2\n");
+        }
+        break;
+        default:
+        break;
+        
+    }
+    //another switch case example
+    c = 'w';
+      switch(c)
+    {
+        case 'a': 
+        case 'A':
+        {
+            printf("This is case a or case A\n");
+        }
+        break;
+        case 'b':
+        case 'B':
+        {
+            printf("This is case b or case B\n");
+        }
+        break;
+        default:
+            printf("The default case could be one line without scope or multiple lines within scope \n");
+        break;
+        
+    }
+		return EXIT_SUCCESS;
+
 }
