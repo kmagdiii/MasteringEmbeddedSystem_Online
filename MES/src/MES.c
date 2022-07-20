@@ -18,6 +18,7 @@ int main(void) {
 	//Examples For implicit and Explicet Conversion
 	//imlicit 
 	int x = 0;
+	int i = 0;
 	float a = 0;
 	char c = 0b0000000 ;
 	int n = 4;
@@ -180,6 +181,26 @@ int main(void) {
         break;
         
     }
+
+		//examples for for loop
+		/*
+		for (intialization ; condition ; action ; action ; ..){
+		    
+		}
+		*/
+		for (i=0;i<10;i++){
+		    printf("Hello %d\n",i);
+		}
+		//for loop with two actions and two intializations
+		for (i=0,x=10;i<10;i++,x--){
+		    printf("Hello %d\t%d\n",i,x);
+		}
+		for (i=10 ; i>0 ; i--){ //substacting 1 is faster than than adding one
+		    printf("Hello %d\n",i);
+		}
+
 		return EXIT_SUCCESS;
+
+		//examples for for loop
 
 }
