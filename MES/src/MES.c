@@ -108,10 +108,10 @@ int main(void) {
 	//#############################
 	//
 	//
-		printf("Enter a character: ");
-		fflush(stdin);fflush(stdout);
-		scanf("%c",&c);
-		printf("ASCII value of G = %d\n",c);
+		// printf("Enter a character: ");
+		// fflush(stdin);fflush(stdout);
+		// scanf("%c",&c);
+		// printf("ASCII value of G = %d\n",c);
 	//########################################################################
 	//
 	//EX6:
@@ -131,7 +131,17 @@ int main(void) {
 	//it is an interview trick
 	//
 	//Write Source Code to Swap Two Numbers without temp variable.
-
+	printf("Enter value of a: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%f",&a);
+	printf("Enter value of b: ");
+	fflush(stdin);fflush(stdout);
+    scanf("%f",&b);
+    a +=b;
+    b = a-b;
+    a = a-b;
+    printf("After swapping, value of a = %.4f\n",a);
+    printf("After swapping, value of b = %.4f\n",b);
 
 
 	return EXIT_SUCCESS;
