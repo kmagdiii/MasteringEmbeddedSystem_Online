@@ -167,5 +167,16 @@ int main(void) {
         default:
             printf("%c is consonant\n",c);
     }
+
+	//checks for a character if it's alphabet or not
+	printf("Enter an character you want to check: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%c",&c);
+	if( (c>=64 && c<=90) || (c>=97 && c<=122) ){ // between A-Z or between a-z
+		printf("%c is a alphabet\n",c);
+	}else{
+		printf("%c is not an alphabet\n",c);
+	}
+
 	return EXIT_SUCCESS;
 }
