@@ -143,6 +143,29 @@ int main(void) {
     printf("After swapping, value of a = %.4f\n",a);
     printf("After swapping, value of b = %.4f\n",b);
 
+	//checks for a number if it's odd or even
+	printf("Enter an integer you want to check: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&x);
+	((x%2) == 0)? printf("%d is even\n",x) : printf("%d is odd",x);
 
+
+	//check for if a character is vowel
+	    printf("Enter an alphabet :");
+    fflush(stdin);fflush(stdout);
+    scanf("%c",&c);
+    
+    switch(c){
+        case 'a':
+        case 'o':
+        case 'i':
+        case 'e':
+        {
+            printf("%c is vowel\n",c);
+        }
+        break;
+        default:
+            printf("%c is consonant\n",c);
+    }
 	return EXIT_SUCCESS;
 }
